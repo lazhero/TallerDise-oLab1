@@ -1,0 +1,15 @@
+module decoder(input[4:0] a, ouput [32:0] Q);
+	if( a=  4’b0000) begin 
+		assign Q= 32'b00000000000000000000000000000000;
+	end
+	if( a=  4’b0001) begin 
+		assign Q= 32'b00000000000000000000000000000001;
+	end
+	if( a=  4’b0010) begin 
+		assign Q= 32'b00000000000000000000000000000010;
+	end
+	if( a=  4’b0011) begin 
+		assign Q= 32'b00000000000000000000000000000100;
+	end
+
+endmodule

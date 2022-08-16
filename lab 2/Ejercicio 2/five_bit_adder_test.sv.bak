@@ -1,0 +1,11 @@
+module five_bit_adder_test();
+	logic [4:0] a,b;
+	logic [5:0] out;
+	
+	
+	
+	
+	
+
+
+end module;

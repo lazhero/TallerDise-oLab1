@@ -1,0 +1,41 @@
+|decoder
+a[0] => ~NO_FANOUT~
+a[1] => ~NO_FANOUT~
+a[2] => ~NO_FANOUT~
+a[3] => ~NO_FANOUT~
+a[4] => ~NO_FANOUT~
+Q[0] <= <GND>
+Q[1] <= <GND>
+Q[2] <= <GND>
+Q[3] <= <GND>
+Q[4] <= <GND>
+Q[5] <= <GND>
+Q[6] <= <GND>
+Q[7] <= <GND>
+Q[8] <= <GND>
+Q[9] <= <GND>
+Q[10] <= <GND>
+Q[11] <= <GND>
+Q[12] <= <GND>
+Q[13] <= <GND>
+Q[14] <= <GND>
+Q[15] <= <GND>
+Q[16] <= <GND>
+Q[17] <= <GND>
+Q[18] <= <GND>
+Q[19] <= <GND>
+Q[20] <= <GND>
+Q[21] <= <GND>
+Q[22] <= <GND>
+Q[23] <= <GND>
+Q[24] <= <GND>
+Q[25] <= <GND>
+Q[26] <= <GND>
+Q[27] <= <GND>
+Q[28] <= <GND>
+Q[29] <= <GND>
+Q[30] <= <GND>
+Q[31] <= <GND>
+Q[32] <= <GND>
+
+

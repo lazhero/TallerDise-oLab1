@@ -1,0 +1,60 @@
+|five_bit_adder
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+Cin => Cin.IN1
+Q[0] <= one_bit_adder:Q0.Q
+Q[1] <= one_bit_adder:Q1.Q
+Q[2] <= one_bit_adder:Q2.Q
+Q[3] <= one_bit_adder:Q3.Q
+Q[4] <= one_bit_adder:Q4.Q
+Cout <= one_bit_adder:Q4.Cout
+
+
+|five_bit_adder|one_bit_adder:Q0
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+Q <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|five_bit_adder|one_bit_adder:Q1
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+Q <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|five_bit_adder|one_bit_adder:Q2
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+Q <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|five_bit_adder|one_bit_adder:Q3
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+Q <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|five_bit_adder|one_bit_adder:Q4
+A => Add0.IN1
+B => Add0.IN2
+Cin => Add1.IN4
+Q <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
