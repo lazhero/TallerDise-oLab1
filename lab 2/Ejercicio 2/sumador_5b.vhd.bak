@@ -1,0 +1,8 @@
+entity sumador is
+	Port(
+	A  : in bit_vector(1 downto 0);
+	B  : in bit;
+	Ci : in bit;
+	S  : out bit;
+	Co : out bit);
+end sumador;
