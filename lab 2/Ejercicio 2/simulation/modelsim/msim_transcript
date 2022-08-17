@@ -1,5 +1,4 @@
 # Reading pref.tcl
-# ERROR: No extended dataflow license exists
 # do Ejercicio2_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -11,47 +10,47 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/lab\ 2/Ejercicio\ 2 {C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/one_bit_adder.sv}
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/lab\ 2/lab\ 2/Ejercicio\ 2 {C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/one_bit_adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:16:03 on Aug 14,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2" C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/one_bit_adder.sv 
+# Start time: 20:33:23 on Aug 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2" C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/one_bit_adder.sv 
 # -- Compiling module one_bit_adder
 # 
 # Top level modules:
 # 	one_bit_adder
-# End time: 17:16:03 on Aug 14,2022, Elapsed time: 0:00:00
+# End time: 20:33:23 on Aug 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/lab\ 2/Ejercicio\ 2 {C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/five_bit_adder.sv}
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/lab\ 2/lab\ 2/Ejercicio\ 2 {C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/five_bit_adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:16:03 on Aug 14,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2" C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/five_bit_adder.sv 
+# Start time: 20:33:23 on Aug 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2" C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/five_bit_adder.sv 
 # -- Compiling module five_bit_adder
 # 
 # Top level modules:
 # 	five_bit_adder
-# End time: 17:16:03 on Aug 14,2022, Elapsed time: 0:00:00
+# End time: 20:33:23 on Aug 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/lab\ 2/Ejercicio\ 2 {C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/five_bit_adder_test.sv}
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/lab\ 2/lab\ 2/Ejercicio\ 2 {C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/five_bit_adder_test.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:16:03 on Aug 14,2022
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2" C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/five_bit_adder_test.sv 
+# Start time: 20:33:23 on Aug 16,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2" C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/five_bit_adder_test.sv 
 # -- Compiling module five_bit_adder_test
 # 
 # Top level modules:
 # 	five_bit_adder_test
-# End time: 17:16:03 on Aug 14,2022, Elapsed time: 0:00:00
+# End time: 20:33:23 on Aug 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  five_bit_adder_test
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" five_bit_adder_test 
-# Start time: 17:16:03 on Aug 14,2022
+# Start time: 20:33:24 on Aug 16,2022
 # Loading sv_std.std
 # Loading work.five_bit_adder_test
 # Loading work.five_bit_adder
 # Loading work.one_bit_adder
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'Cin'. The port definition is at: C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/five_bit_adder.sv(1).
-#    Time: 0 ps  Iteration: 0  Instance: /five_bit_adder_test/myadder File: C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/five_bit_adder_test.sv Line: 6
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'Cin'. The port definition is at: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/five_bit_adder.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /five_bit_adder_test/myadder File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/five_bit_adder_test.sv Line: 6
 # 
 # add wave *
 # view structure
@@ -59,11 +58,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-add wave -position insertpoint  \
-sim:/five_bit_adder_test/a
-add wave -position insertpoint  \
-sim:/five_bit_adder_test/b
-add wave -position insertpoint  \
-sim:/five_bit_adder_test/out
-# End time: 21:03:03 on Aug 14,2022, Elapsed time: 3:47:00
+# End time: 20:38:50 on Aug 16,2022, Elapsed time: 0:05:26
 # Errors: 0, Warnings: 1

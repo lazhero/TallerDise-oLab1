@@ -1,0 +1,11 @@
+module decoder_tb();
+	logic [6:0] out;
+	logic [4:0] in;
+	
+	initial begin 
+		out=00000;
+		#10;
+		out=11111;
+	end
+	
+endmodule 
