@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ejercicio2
-Sun Aug 14 16:52:40 2022
+Tue Aug 16 23:36:57 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,9 +14,11 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "hex_display:d1"
+ 10. Port Connectivity Checks: "five_bit_adder:adder"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,14 +45,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Aug 14 16:52:40 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Aug 16 23:36:57 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Ejercicio2                                  ;
-; Top-level Entity Name           ; five_bit_adder                              ;
+; Top-level Entity Name           ; adder_display                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 17                                          ;
+; Total pins                      ; 24                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -69,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; five_bit_adder     ; Ejercicio2         ;
+; Top-level entity name                                                           ; adder_display      ; Ejercicio2         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -166,55 +168,63 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                            ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
-; one_bit_adder.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/one_bit_adder.sv  ;         ;
-; five_bit_adder.sv                ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/five_bit_adder.sv ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+; one_bit_adder.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/one_bit_adder.sv  ;         ;
+; five_bit_adder.sv                ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/five_bit_adder.sv ;         ;
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/decoder.sv        ;         ;
+; hex_display.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/hex_display.sv    ;         ;
+; adder_display.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/adder_display.sv  ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 8         ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 16        ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 0         ;
-;     -- 5 input functions                    ; 4         ;
-;     -- 4 input functions                    ; 4         ;
-;     -- <=3 input functions                  ; 8         ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 17        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; Cin~input ;
-; Maximum fan-out                             ; 5         ;
-; Total fan-out                               ; 81        ;
-; Average fan-out                             ; 1.62      ;
-+---------------------------------------------+-----------+
++--------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                ;
++---------------------------------------------+----------------------------------------------+
+; Resource                                    ; Usage                                        ;
++---------------------------------------------+----------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 14                                           ;
+;                                             ;                                              ;
+; Combinational ALUT usage for logic          ; 25                                           ;
+;     -- 7 input functions                    ; 0                                            ;
+;     -- 6 input functions                    ; 2                                            ;
+;     -- 5 input functions                    ; 1                                            ;
+;     -- 4 input functions                    ; 13                                           ;
+;     -- <=3 input functions                  ; 9                                            ;
+;                                             ;                                              ;
+; Dedicated logic registers                   ; 0                                            ;
+;                                             ;                                              ;
+; I/O pins                                    ; 24                                           ;
+;                                             ;                                              ;
+; Total DSP Blocks                            ; 0                                            ;
+;                                             ;                                              ;
+; Maximum fan-out node                        ; five_bit_adder:adder|one_bit_adder:Q0|Add0~0 ;
+; Maximum fan-out                             ; 7                                            ;
+; Total fan-out                               ; 128                                          ;
+; Average fan-out                             ; 1.75                                         ;
++---------------------------------------------+----------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+----------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name    ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+----------------+--------------+
-; |five_bit_adder            ; 16 (0)              ; 0 (0)                     ; 0                 ; 0          ; 17   ; 0            ; |five_bit_adder                  ; five_bit_adder ; work         ;
-;    |one_bit_adder:Q0|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |five_bit_adder|one_bit_adder:Q0 ; one_bit_adder  ; work         ;
-;    |one_bit_adder:Q1|      ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |five_bit_adder|one_bit_adder:Q1 ; one_bit_adder  ; work         ;
-;    |one_bit_adder:Q2|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |five_bit_adder|one_bit_adder:Q2 ; one_bit_adder  ; work         ;
-;    |one_bit_adder:Q3|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |five_bit_adder|one_bit_adder:Q3 ; one_bit_adder  ; work         ;
-;    |one_bit_adder:Q4|      ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |five_bit_adder|one_bit_adder:Q4 ; one_bit_adder  ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------+----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                        ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Entity Name    ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+----------------+--------------+
+; |adder_display             ; 25 (0)              ; 0 (0)                     ; 0                 ; 0          ; 24   ; 0            ; |adder_display                                       ; adder_display  ; work         ;
+;    |five_bit_adder:adder|  ; 15 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_display|five_bit_adder:adder                  ; five_bit_adder ; work         ;
+;       |one_bit_adder:Q0|   ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_display|five_bit_adder:adder|one_bit_adder:Q0 ; one_bit_adder  ; work         ;
+;       |one_bit_adder:Q1|   ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_display|five_bit_adder:adder|one_bit_adder:Q1 ; one_bit_adder  ; work         ;
+;       |one_bit_adder:Q2|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_display|five_bit_adder:adder|one_bit_adder:Q2 ; one_bit_adder  ; work         ;
+;       |one_bit_adder:Q3|   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_display|five_bit_adder:adder|one_bit_adder:Q3 ; one_bit_adder  ; work         ;
+;       |one_bit_adder:Q4|   ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_display|five_bit_adder:adder|one_bit_adder:Q4 ; one_bit_adder  ; work         ;
+;    |hex_display:d1|        ; 3 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_display|hex_display:d1                        ; hex_display    ; work         ;
+;       |decoder:d0|         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_display|hex_display:d1|decoder:d0             ; decoder        ; work         ;
+;    |hex_display:d2|        ; 7 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_display|hex_display:d2                        ; hex_display    ; work         ;
+;       |decoder:d0|         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |adder_display|hex_display:d2|decoder:d0             ; decoder        ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -233,26 +243,45 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "hex_display:d1"                                                                                                                          ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                   ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; a    ; Input ; Warning  ; Input port expression (2 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "a[3..2]" will be connected to GND. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "five_bit_adder:adder"                                                                                                                                                                ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Cin[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 16                          ;
+; arriav_lcell_comb     ; 27                          ;
 ;     arith             ; 6                           ;
 ;         0 data inputs ; 1                           ;
 ;         2 data inputs ; 1                           ;
 ;         4 data inputs ; 3                           ;
 ;         5 data inputs ; 1                           ;
-;     normal            ; 10                          ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 1                           ;
-;         5 data inputs ; 3                           ;
-; boundary_port         ; 17                          ;
+;     normal            ; 21                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 7                           ;
+;         4 data inputs ; 10                          ;
+;         6 data inputs ; 2                           ;
+; boundary_port         ; 24                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.10                        ;
-; Average LUT depth     ; 2.31                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 3.33                        ;
 +-----------------------+-----------------------------+
 
 
@@ -271,31 +300,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sun Aug 14 16:52:25 2022
+    Info: Processing started: Tue Aug 16 23:36:47 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ejercicio2 -c Ejercicio2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ejercicio2.sv
-    Info (12023): Found entity 1: Ejercicio2 File: C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/Ejercicio2.sv Line: 1
+    Info (12023): Found entity 1: Ejercicio2 File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/Ejercicio2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file one_bit_adder.sv
-    Info (12023): Found entity 1: one_bit_adder File: C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/one_bit_adder.sv Line: 1
+    Info (12023): Found entity 1: one_bit_adder File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/one_bit_adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file five_bit_adder.sv
-    Info (12023): Found entity 1: five_bit_adder File: C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/five_bit_adder.sv Line: 1
+    Info (12023): Found entity 1: five_bit_adder File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/five_bit_adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file five_bit_adder_test.sv
-    Info (12023): Found entity 1: five_bit_adder_test File: C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/five_bit_adder_test.sv Line: 1
-Info (12127): Elaborating entity "five_bit_adder" for the top level hierarchy
-Info (12128): Elaborating entity "one_bit_adder" for hierarchy "one_bit_adder:Q0" File: C:/TEC/Segundo Semestre 2022/taller/lab 2/Ejercicio 2/five_bit_adder.sv Line: 3
+    Info (12023): Found entity 1: five_bit_adder_test File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/five_bit_adder_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
+    Info (12023): Found entity 1: decoder File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/decoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file hex_display.sv
+    Info (12023): Found entity 1: hex_display File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/hex_display.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder_display.sv
+    Info (12023): Found entity 1: adder_display File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/adder_display.sv Line: 1
+Info (12127): Elaborating entity "adder_display" for the top level hierarchy
+Info (12128): Elaborating entity "five_bit_adder" for hierarchy "five_bit_adder:adder" File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/adder_display.sv Line: 3
+Info (12128): Elaborating entity "one_bit_adder" for hierarchy "five_bit_adder:adder|one_bit_adder:Q0" File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/five_bit_adder.sv Line: 3
+Info (12128): Elaborating entity "hex_display" for hierarchy "hex_display:d1" File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/adder_display.sv Line: 4
+Info (12128): Elaborating entity "decoder" for hierarchy "hex_display:d1|decoder:d0" File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/hex_display.sv Line: 4
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 11 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 16 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Sun Aug 14 16:52:40 2022
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:23
+Info (21057): Implemented 49 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 10 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 25 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4800 megabytes
+    Info: Processing ended: Tue Aug 16 23:36:57 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:25
 
 

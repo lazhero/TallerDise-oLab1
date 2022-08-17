@@ -1,4 +1,31 @@
-|five_bit_adder
+|adder_display
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+Q1[0] << hex_display:d1.Q
+Q1[1] << hex_display:d1.Q
+Q1[2] << hex_display:d1.Q
+Q1[3] << hex_display:d1.Q
+Q1[4] << hex_display:d1.Q
+Q1[5] << hex_display:d1.Q
+Q1[6] << hex_display:d1.Q
+Q0[0] << hex_display:d2.Q
+Q0[1] << hex_display:d2.Q
+Q0[2] << hex_display:d2.Q
+Q0[3] << hex_display:d2.Q
+Q0[4] << hex_display:d2.Q
+Q0[5] << hex_display:d2.Q
+Q0[6] << hex_display:d2.Q
+
+
+|adder_display|five_bit_adder:adder
 A[0] => A[0].IN1
 A[1] => A[1].IN1
 A[2] => A[2].IN1
@@ -18,7 +45,7 @@ Q[4] <= one_bit_adder:Q4.Q
 Cout <= one_bit_adder:Q4.Cout
 
 
-|five_bit_adder|one_bit_adder:Q0
+|adder_display|five_bit_adder:adder|one_bit_adder:Q0
 A => Add0.IN1
 B => Add0.IN2
 Cin => Add1.IN4
@@ -26,7 +53,7 @@ Q <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|five_bit_adder|one_bit_adder:Q1
+|adder_display|five_bit_adder:adder|one_bit_adder:Q1
 A => Add0.IN1
 B => Add0.IN2
 Cin => Add1.IN4
@@ -34,7 +61,7 @@ Q <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|five_bit_adder|one_bit_adder:Q2
+|adder_display|five_bit_adder:adder|one_bit_adder:Q2
 A => Add0.IN1
 B => Add0.IN2
 Cin => Add1.IN4
@@ -42,7 +69,7 @@ Q <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|five_bit_adder|one_bit_adder:Q3
+|adder_display|five_bit_adder:adder|one_bit_adder:Q3
 A => Add0.IN1
 B => Add0.IN2
 Cin => Add1.IN4
@@ -50,11 +77,101 @@ Q <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|five_bit_adder|one_bit_adder:Q4
+|adder_display|five_bit_adder:adder|one_bit_adder:Q4
 A => Add0.IN1
 B => Add0.IN2
 Cin => Add1.IN4
 Q <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_display|hex_display:d1
+a[0] => Decoder0.IN3
+a[0] => Decoder1.IN3
+a[0] => Decoder2.IN3
+a[0] => Decoder3.IN3
+a[0] => Decoder4.IN3
+a[1] => Decoder0.IN2
+a[1] => Decoder1.IN2
+a[1] => Decoder2.IN2
+a[1] => Decoder3.IN2
+a[1] => Decoder4.IN2
+a[2] => Decoder0.IN1
+a[2] => Decoder1.IN1
+a[2] => Decoder2.IN1
+a[2] => Decoder3.IN1
+a[2] => Decoder4.IN1
+a[3] => Decoder0.IN0
+a[3] => Decoder1.IN0
+a[3] => Decoder2.IN0
+a[3] => Decoder3.IN0
+a[3] => Decoder4.IN0
+Q[0] <= decoder:d0.Q
+Q[1] <= decoder:d0.Q
+Q[2] <= decoder:d0.Q
+Q[3] <= decoder:d0.Q
+Q[4] <= decoder:d0.Q
+Q[5] <= decoder:d0.Q
+Q[6] <= decoder:d0.Q
+
+
+|adder_display|hex_display:d1|decoder:d0
+a[0] => Decoder0.IN4
+a[1] => Decoder0.IN3
+a[2] => Decoder0.IN2
+a[3] => Decoder0.IN1
+a[4] => Decoder0.IN0
+Q[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_display|hex_display:d2
+a[0] => Decoder0.IN3
+a[0] => Decoder1.IN3
+a[0] => Decoder2.IN3
+a[0] => Decoder3.IN3
+a[0] => Decoder4.IN3
+a[1] => Decoder0.IN2
+a[1] => Decoder1.IN2
+a[1] => Decoder2.IN2
+a[1] => Decoder3.IN2
+a[1] => Decoder4.IN2
+a[2] => Decoder0.IN1
+a[2] => Decoder1.IN1
+a[2] => Decoder2.IN1
+a[2] => Decoder3.IN1
+a[2] => Decoder4.IN1
+a[3] => Decoder0.IN0
+a[3] => Decoder1.IN0
+a[3] => Decoder2.IN0
+a[3] => Decoder3.IN0
+a[3] => Decoder4.IN0
+Q[0] <= decoder:d0.Q
+Q[1] <= decoder:d0.Q
+Q[2] <= decoder:d0.Q
+Q[3] <= decoder:d0.Q
+Q[4] <= decoder:d0.Q
+Q[5] <= decoder:d0.Q
+Q[6] <= decoder:d0.Q
+
+
+|adder_display|hex_display:d2|decoder:d0
+a[0] => Decoder0.IN4
+a[1] => Decoder0.IN3
+a[2] => Decoder0.IN2
+a[3] => Decoder0.IN1
+a[4] => Decoder0.IN0
+Q[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
