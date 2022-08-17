@@ -1,0 +1,75 @@
+|sumador_5b
+A[0] => sumador:S0.A
+A[1] => sumador:S1.A
+A[2] => sumador:S2.A
+A[3] => sumador:S3.A
+A[4] => sumador:S4.A
+B[0] => sumador:S0.B
+B[1] => sumador:S1.B
+B[2] => sumador:S2.B
+B[3] => sumador:S3.B
+B[4] => sumador:S4.B
+C_in => sumador:S0.Ci
+S[0] << sumador:S0.S
+S[1] << sumador:S1.S
+S[2] << sumador:S2.S
+S[3] << sumador:S3.S
+S[4] << sumador:S4.S
+C_out << sumador:S4.Co
+
+
+|sumador_5b|sumador:S0
+A => xorAB.IN0
+A => Co.IN0
+B => xorAB.IN1
+B => Co.IN1
+Ci => S.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_5b|sumador:S1
+A => xorAB.IN0
+A => Co.IN0
+B => xorAB.IN1
+B => Co.IN1
+Ci => S.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_5b|sumador:S2
+A => xorAB.IN0
+A => Co.IN0
+B => xorAB.IN1
+B => Co.IN1
+Ci => S.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_5b|sumador:S3
+A => xorAB.IN0
+A => Co.IN0
+B => xorAB.IN1
+B => Co.IN1
+Ci => S.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumador_5b|sumador:S4
+A => xorAB.IN0
+A => Co.IN0
+B => xorAB.IN1
+B => Co.IN1
+Ci => S.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
