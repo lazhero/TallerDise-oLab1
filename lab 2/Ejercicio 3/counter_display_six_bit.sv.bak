@@ -1,0 +1,4 @@
+module counter_display_six_bit(input rst,clk,a, output[5:0] c5,c4,c3,c2,c1,c0);
+
+
+endmodule 

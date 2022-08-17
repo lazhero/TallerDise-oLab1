@@ -1,0 +1,242 @@
+|counter_display_six_bit
+rst => rst.IN1
+clk => clk.IN1
+initialValue[0] => initialValue[0].IN1
+initialValue[1] => initialValue[1].IN1
+initialValue[2] => initialValue[2].IN1
+initialValue[3] => initialValue[3].IN1
+initialValue[4] => initialValue[4].IN1
+initialValue[5] => initialValue[5].IN1
+c5[0] << bit_to_display:h5.port1
+c5[1] << bit_to_display:h5.port1
+c5[2] << bit_to_display:h5.port1
+c5[3] << bit_to_display:h5.port1
+c5[4] << bit_to_display:h5.port1
+c5[5] << bit_to_display:h5.port1
+c5[6] << bit_to_display:h5.port1
+c4[0] << bit_to_display:h4.port1
+c4[1] << bit_to_display:h4.port1
+c4[2] << bit_to_display:h4.port1
+c4[3] << bit_to_display:h4.port1
+c4[4] << bit_to_display:h4.port1
+c4[5] << bit_to_display:h4.port1
+c4[6] << bit_to_display:h4.port1
+c3[0] << bit_to_display:h3.port1
+c3[1] << bit_to_display:h3.port1
+c3[2] << bit_to_display:h3.port1
+c3[3] << bit_to_display:h3.port1
+c3[4] << bit_to_display:h3.port1
+c3[5] << bit_to_display:h3.port1
+c3[6] << bit_to_display:h3.port1
+c2[0] << bit_to_display:h2.port1
+c2[1] << bit_to_display:h2.port1
+c2[2] << bit_to_display:h2.port1
+c2[3] << bit_to_display:h2.port1
+c2[4] << bit_to_display:h2.port1
+c2[5] << bit_to_display:h2.port1
+c2[6] << bit_to_display:h2.port1
+c1[0] << bit_to_display:h1.port1
+c1[1] << bit_to_display:h1.port1
+c1[2] << bit_to_display:h1.port1
+c1[3] << bit_to_display:h1.port1
+c1[4] << bit_to_display:h1.port1
+c1[5] << bit_to_display:h1.port1
+c1[6] << bit_to_display:h1.port1
+c0[0] << bit_to_display:h0.port1
+c0[1] << bit_to_display:h0.port1
+c0[2] << bit_to_display:h0.port1
+c0[3] << bit_to_display:h0.port1
+c0[4] << bit_to_display:h0.port1
+c0[5] << bit_to_display:h0.port1
+c0[6] << bit_to_display:h0.port1
+
+
+|counter_display_six_bit|counter:co1
+rst => state[0].ALOAD
+rst => state[1].ALOAD
+rst => state[2].ALOAD
+rst => state[3].ALOAD
+rst => state[4].ALOAD
+rst => state[5].ALOAD
+clk => state[0].CLK
+clk => state[1].CLK
+clk => state[2].CLK
+clk => state[3].CLK
+clk => state[4].CLK
+clk => state[5].CLK
+a => state[5].ENA
+a => state[4].ENA
+a => state[3].ENA
+a => state[2].ENA
+a => state[1].ENA
+a => state[0].ENA
+initValue[0] => state[0].ADATA
+initValue[1] => state[1].ADATA
+initValue[2] => state[2].ADATA
+initValue[3] => state[3].ADATA
+initValue[4] => state[4].ADATA
+initValue[5] => state[5].ADATA
+count[0] <= state[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= state[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= state[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= state[3].DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= state[4].DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= state[5].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_display_six_bit|bit_to_display:h5
+a => Decoder0.IN0
+display[0] <= decoder:d1.Q
+display[1] <= decoder:d1.Q
+display[2] <= decoder:d1.Q
+display[3] <= decoder:d1.Q
+display[4] <= decoder:d1.Q
+display[5] <= decoder:d1.Q
+display[6] <= decoder:d1.Q
+
+
+|counter_display_six_bit|bit_to_display:h5|decoder:d1
+a[0] => Decoder0.IN4
+a[1] => Decoder0.IN3
+a[2] => Decoder0.IN2
+a[3] => Decoder0.IN1
+a[4] => Decoder0.IN0
+Q[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_display_six_bit|bit_to_display:h4
+a => Decoder0.IN0
+display[0] <= decoder:d1.Q
+display[1] <= decoder:d1.Q
+display[2] <= decoder:d1.Q
+display[3] <= decoder:d1.Q
+display[4] <= decoder:d1.Q
+display[5] <= decoder:d1.Q
+display[6] <= decoder:d1.Q
+
+
+|counter_display_six_bit|bit_to_display:h4|decoder:d1
+a[0] => Decoder0.IN4
+a[1] => Decoder0.IN3
+a[2] => Decoder0.IN2
+a[3] => Decoder0.IN1
+a[4] => Decoder0.IN0
+Q[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_display_six_bit|bit_to_display:h3
+a => Decoder0.IN0
+display[0] <= decoder:d1.Q
+display[1] <= decoder:d1.Q
+display[2] <= decoder:d1.Q
+display[3] <= decoder:d1.Q
+display[4] <= decoder:d1.Q
+display[5] <= decoder:d1.Q
+display[6] <= decoder:d1.Q
+
+
+|counter_display_six_bit|bit_to_display:h3|decoder:d1
+a[0] => Decoder0.IN4
+a[1] => Decoder0.IN3
+a[2] => Decoder0.IN2
+a[3] => Decoder0.IN1
+a[4] => Decoder0.IN0
+Q[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_display_six_bit|bit_to_display:h2
+a => Decoder0.IN0
+display[0] <= decoder:d1.Q
+display[1] <= decoder:d1.Q
+display[2] <= decoder:d1.Q
+display[3] <= decoder:d1.Q
+display[4] <= decoder:d1.Q
+display[5] <= decoder:d1.Q
+display[6] <= decoder:d1.Q
+
+
+|counter_display_six_bit|bit_to_display:h2|decoder:d1
+a[0] => Decoder0.IN4
+a[1] => Decoder0.IN3
+a[2] => Decoder0.IN2
+a[3] => Decoder0.IN1
+a[4] => Decoder0.IN0
+Q[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_display_six_bit|bit_to_display:h1
+a => Decoder0.IN0
+display[0] <= decoder:d1.Q
+display[1] <= decoder:d1.Q
+display[2] <= decoder:d1.Q
+display[3] <= decoder:d1.Q
+display[4] <= decoder:d1.Q
+display[5] <= decoder:d1.Q
+display[6] <= decoder:d1.Q
+
+
+|counter_display_six_bit|bit_to_display:h1|decoder:d1
+a[0] => Decoder0.IN4
+a[1] => Decoder0.IN3
+a[2] => Decoder0.IN2
+a[3] => Decoder0.IN1
+a[4] => Decoder0.IN0
+Q[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter_display_six_bit|bit_to_display:h0
+a => Decoder0.IN0
+display[0] <= decoder:d1.Q
+display[1] <= decoder:d1.Q
+display[2] <= decoder:d1.Q
+display[3] <= decoder:d1.Q
+display[4] <= decoder:d1.Q
+display[5] <= decoder:d1.Q
+display[6] <= decoder:d1.Q
+
+
+|counter_display_six_bit|bit_to_display:h0|decoder:d1
+a[0] => Decoder0.IN4
+a[1] => Decoder0.IN3
+a[2] => Decoder0.IN2
+a[3] => Decoder0.IN1
+a[4] => Decoder0.IN0
+Q[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

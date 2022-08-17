@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "c5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "c5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "c5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "c5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "c4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "c4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "c4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "c4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "c3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "c3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "c3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "c3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "c2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "c2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "c2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "c2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "c1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "c1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "c1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "c1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "c0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "c0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "c0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "c0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "initialValue[5]",
+					"strict" : false
+				},
+				{
+					"name" : "initialValue[4]",
+					"strict" : false
+				},
+				{
+					"name" : "initialValue[3]",
+					"strict" : false
+				},
+				{
+					"name" : "initialValue[2]",
+					"strict" : false
+				},
+				{
+					"name" : "initialValue[1]",
+					"strict" : false
+				},
+				{
+					"name" : "initialValue[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
