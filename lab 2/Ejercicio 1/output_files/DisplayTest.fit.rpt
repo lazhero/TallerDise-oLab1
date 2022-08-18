@@ -1,5 +1,5 @@
 Fitter report for DisplayTest
-Tue Aug 16 21:45:11 2022
+Thu Aug 18 12:40:30 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Tue Aug 16 21:45:11 2022       ;
+; Fitter Status                   ; Successful - Thu Aug 18 12:40:30 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; DisplayTest                                 ;
 ; Top-level Entity Name           ; decoder                                     ;
@@ -154,7 +154,7 @@ https://fpgasoftware.intel.com/eula.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.1%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 3-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -1355,11 +1355,11 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; Q[4]     ; Incomplete set of assignments ;
 ; Q[5]     ; Incomplete set of assignments ;
 ; Q[6]     ; Incomplete set of assignments ;
-; a[2]     ; Incomplete set of assignments ;
-; a[1]     ; Incomplete set of assignments ;
-; a[0]     ; Incomplete set of assignments ;
-; a[3]     ; Incomplete set of assignments ;
 ; a[4]     ; Incomplete set of assignments ;
+; a[2]     ; Incomplete set of assignments ;
+; a[3]     ; Incomplete set of assignments ;
+; a[0]     ; Incomplete set of assignments ;
+; a[1]     ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
 
@@ -1385,11 +1385,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Q[4] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; Q[5] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; Q[6] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; a[2] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; a[1] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; a[0] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; a[4] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; a[2] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; a[3] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; a[4] ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; a[0] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; a[1] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
 
@@ -1398,46 +1398,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; a[2]                ;                   ;         ;
-;      - WideOr6~0    ; 0                 ; 0       ;
-;      - WideOr5~0    ; 0                 ; 0       ;
-;      - WideOr4~0    ; 0                 ; 0       ;
-;      - WideOr3~0    ; 0                 ; 0       ;
-;      - WideOr2~0    ; 0                 ; 0       ;
-;      - WideOr1~0    ; 0                 ; 0       ;
-;      - WideOr0~0    ; 0                 ; 0       ;
-; a[1]                ;                   ;         ;
-;      - WideOr6~0    ; 1                 ; 0       ;
-;      - WideOr5~0    ; 1                 ; 0       ;
-;      - WideOr4~0    ; 1                 ; 0       ;
-;      - WideOr3~0    ; 1                 ; 0       ;
-;      - WideOr2~0    ; 1                 ; 0       ;
-;      - WideOr1~0    ; 1                 ; 0       ;
-;      - WideOr0~0    ; 1                 ; 0       ;
-; a[0]                ;                   ;         ;
-;      - WideOr6~0    ; 1                 ; 0       ;
-;      - WideOr5~0    ; 1                 ; 0       ;
-;      - WideOr4~0    ; 1                 ; 0       ;
-;      - WideOr3~0    ; 1                 ; 0       ;
-;      - WideOr2~0    ; 1                 ; 0       ;
-;      - WideOr1~0    ; 1                 ; 0       ;
-;      - WideOr0~0    ; 1                 ; 0       ;
-; a[3]                ;                   ;         ;
-;      - WideOr6~0    ; 1                 ; 0       ;
-;      - WideOr5~0    ; 1                 ; 0       ;
-;      - WideOr4~0    ; 1                 ; 0       ;
-;      - WideOr3~0    ; 1                 ; 0       ;
-;      - WideOr2~0    ; 1                 ; 0       ;
-;      - WideOr1~0    ; 1                 ; 0       ;
-;      - WideOr0~0    ; 1                 ; 0       ;
 ; a[4]                ;                   ;         ;
-;      - WideOr6~0    ; 0                 ; 0       ;
-;      - WideOr5~0    ; 0                 ; 0       ;
-;      - WideOr4~0    ; 0                 ; 0       ;
-;      - WideOr3~0    ; 0                 ; 0       ;
-;      - WideOr2~0    ; 0                 ; 0       ;
-;      - WideOr1~0    ; 0                 ; 0       ;
-;      - WideOr0~0    ; 0                 ; 0       ;
+;      - Q~0          ; 1                 ; 0       ;
+;      - Q~1          ; 1                 ; 0       ;
+;      - Q~2          ; 1                 ; 0       ;
+;      - Q~3          ; 1                 ; 0       ;
+;      - Q~4          ; 1                 ; 0       ;
+;      - Q~5          ; 1                 ; 0       ;
+;      - Q~6          ; 1                 ; 0       ;
+; a[2]                ;                   ;         ;
+;      - Q~0          ; 1                 ; 0       ;
+;      - Q~1          ; 1                 ; 0       ;
+;      - Q~2          ; 1                 ; 0       ;
+;      - Q~3          ; 1                 ; 0       ;
+;      - Q~4          ; 1                 ; 0       ;
+;      - Q~5          ; 1                 ; 0       ;
+;      - Q~6          ; 1                 ; 0       ;
+; a[3]                ;                   ;         ;
+;      - Q~0          ; 1                 ; 0       ;
+;      - Q~1          ; 1                 ; 0       ;
+;      - Q~2          ; 1                 ; 0       ;
+;      - Q~3          ; 1                 ; 0       ;
+;      - Q~4          ; 1                 ; 0       ;
+;      - Q~5          ; 1                 ; 0       ;
+;      - Q~6          ; 1                 ; 0       ;
+; a[0]                ;                   ;         ;
+;      - Q~0          ; 1                 ; 0       ;
+;      - Q~1          ; 1                 ; 0       ;
+;      - Q~2          ; 1                 ; 0       ;
+;      - Q~3          ; 1                 ; 0       ;
+;      - Q~4          ; 1                 ; 0       ;
+;      - Q~5          ; 1                 ; 0       ;
+;      - Q~6          ; 1                 ; 0       ;
+; a[1]                ;                   ;         ;
+;      - Q~0          ; 1                 ; 0       ;
+;      - Q~1          ; 1                 ; 0       ;
+;      - Q~2          ; 1                 ; 0       ;
+;      - Q~3          ; 1                 ; 0       ;
+;      - Q~4          ; 1                 ; 0       ;
+;      - Q~5          ; 1                 ; 0       ;
+;      - Q~6          ; 1                 ; 0       ;
 +---------------------+-------------------+---------+
 
 
@@ -1447,9 +1447,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Routing Resource Type                       ; Usage                  ;
 +---------------------------------------------+------------------------+
 ; Block interconnects                         ; 12 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 9 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 9 / 119,108 ( < 1 % )  ;
-; C4 interconnects                            ; 11 / 56,300 ( < 1 % )  ;
+; C12 interconnects                           ; 8 / 13,420 ( < 1 % )   ;
+; C2 interconnects                            ; 7 / 119,108 ( < 1 % )  ;
+; C4 interconnects                            ; 12 / 56,300 ( < 1 % )  ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )         ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )         ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )         ;
@@ -1512,8 +1512,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Local interconnects                         ; 0 / 84,580 ( 0 % )     ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )         ;
 ; R14 interconnects                           ; 29 / 12,676 ( < 1 % )  ;
-; R14/C12 interconnect drivers                ; 33 / 20,720 ( < 1 % )  ;
-; R3 interconnects                            ; 4 / 130,992 ( < 1 % )  ;
+; R14/C12 interconnect drivers                ; 32 / 20,720 ( < 1 % )  ;
+; R3 interconnects                            ; 5 / 130,992 ( < 1 % )  ;
 ; R6 interconnects                            ; 9 / 266,960 ( < 1 % )  ;
 ; Spine clocks                                ; 0 / 360 ( 0 % )        ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )     ;
@@ -1586,11 +1586,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Q[4]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; Q[5]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; Q[6]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; a[2]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; a[1]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; a[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
-; a[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 ; a[4]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; a[2]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; a[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; a[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
+; a[1]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 
@@ -1653,7 +1653,7 @@ Info (184021): Fitter periphery placement operations ending: elapsed time is 00:
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:13
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:12
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'DisplayTest.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1674,18 +1674,18 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.12 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:03
 Info (144001): Generated suppressed messages file C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 1/output_files/DisplayTest.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 6530 megabytes
-    Info: Processing ended: Tue Aug 16 21:45:11 2022
+    Info: Peak virtual memory: 6532 megabytes
+    Info: Processing ended: Thu Aug 18 12:40:31 2022
     Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:01:01
+    Info: Total CPU time (on all processors): 00:01:00
 
 
 +----------------------------+

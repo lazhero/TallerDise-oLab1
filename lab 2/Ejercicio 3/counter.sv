@@ -5,7 +5,7 @@ module counter #(parameter N=6)(input rst,clk,a,input [N-1:0] initValue, output[
 		
 		//logica secuencia
 		
-		always@(posedge clk or posedge rst)begin
+		always_ff@(posedge clk or posedge rst)begin
 			if(rst)state<=initValue;
 			else state<=nextState;
 		
@@ -13,7 +13,7 @@ module counter #(parameter N=6)(input rst,clk,a,input [N-1:0] initValue, output[
 		
 		//logica de siguiente estado
 		
-		always@(a)begin
+		always_comb @(a)begin
 			if(a)begin
 				case(state)
 				
