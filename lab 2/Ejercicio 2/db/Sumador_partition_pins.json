@@ -4,71 +4,95 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "S[0]",
+					"name" : "Dis0_0",
 					"strict" : false
 				},
 				{
-					"name" : "S[1]",
+					"name" : "Dis0_1",
 					"strict" : false
 				},
 				{
-					"name" : "S[2]",
+					"name" : "Dis0_2",
 					"strict" : false
 				},
 				{
-					"name" : "S[3]",
+					"name" : "Dis0_3",
 					"strict" : false
 				},
 				{
-					"name" : "S[4]",
+					"name" : "Dis0_4",
 					"strict" : false
 				},
 				{
-					"name" : "C_out",
+					"name" : "Dis0_5",
 					"strict" : false
 				},
 				{
-					"name" : "C_in",
+					"name" : "Dis0_6",
 					"strict" : false
 				},
 				{
-					"name" : "A[0]",
+					"name" : "Dis1_0",
 					"strict" : false
 				},
 				{
-					"name" : "B[0]",
+					"name" : "Dis1_2",
 					"strict" : false
 				},
 				{
-					"name" : "A[1]",
+					"name" : "Dis1_3",
 					"strict" : false
 				},
 				{
-					"name" : "B[1]",
+					"name" : "Dis1_4",
 					"strict" : false
 				},
 				{
-					"name" : "A[2]",
+					"name" : "Dis1_5",
 					"strict" : false
 				},
 				{
-					"name" : "B[2]",
+					"name" : "Dis1_6",
 					"strict" : false
 				},
 				{
-					"name" : "A[3]",
+					"name" : "B3",
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
+					"name" : "A3",
 					"strict" : false
 				},
 				{
-					"name" : "A[4]",
+					"name" : "A2",
 					"strict" : false
 				},
 				{
-					"name" : "B[4]",
+					"name" : "B2",
+					"strict" : false
+				},
+				{
+					"name" : "A1",
+					"strict" : false
+				},
+				{
+					"name" : "B1",
+					"strict" : false
+				},
+				{
+					"name" : "A0",
+					"strict" : false
+				},
+				{
+					"name" : "B0",
+					"strict" : false
+				},
+				{
+					"name" : "A4",
+					"strict" : false
+				},
+				{
+					"name" : "B4",
 					"strict" : false
 				}
 			]

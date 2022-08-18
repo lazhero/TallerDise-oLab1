@@ -1,0 +1,7 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+entity programa_ejercicio_2 is
+	Port(
+		num1: std_logic_vector(4 downto 0);
+		num1: std_logic_vector(4 downto 0);
+	);
