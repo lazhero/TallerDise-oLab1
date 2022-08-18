@@ -1,0 +1,35 @@
+module counter_tb();
+	
+	logic clk,rst,a;
+	logic [5:0] count;
+	
+	counter mycounter(.rst(rst),.clk(clk),.a(a).count(count));
+	
+	
+	initial begin 
+		rst=0;
+		a=0;
+		clk=0;
+		#10;
+		
+		
+		rst=1;
+		#10;
+		
+		a=1;
+		#10;
+		
+		clk=1;
+		#10
+		
+		a=0;
+		
+		#10
+		
+		a=1;
+		
+		#10
+	
+	end 
+
+endmodule;
