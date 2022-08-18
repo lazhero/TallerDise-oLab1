@@ -1,9 +1,9 @@
-module counter_tb();
+module counter_four_bit_tb();
 	
 	logic clk,rst,a;
-	logic [5:0] count,initValue;
+	logic [3:0] count,initValue;
 	
-	counter mycounter(.rst(rst),.clk(clk),.a(a),.count(count),.initValue(initValue));
+	counter#(.N(4)) mycounter(.rst(rst),.clk(clk),.a(a),.count(count),.initValue(initValue));
 	
 	always begin 
 		#10;
@@ -11,7 +11,7 @@ module counter_tb();
 	
 	end
 	initial begin
-		initValue=6'b101010;
+		initValue=4'b1001;
 		clk=1'b0;
 		rst=1'b1;
 		#10; //posedge
@@ -33,7 +33,7 @@ module counter_tb();
 		a=0;
 		
 		#3; //reset in no edge
-		initValue=6'b000111;
+		initValue=4'b0011;
 		rst=1'b1;
 		#7;
 		rst=1'b0;
@@ -46,5 +46,4 @@ module counter_tb();
 		
 	
 	end 
-
-endmodule
+endmodule 

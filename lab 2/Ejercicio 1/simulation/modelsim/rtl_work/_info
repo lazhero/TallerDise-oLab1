@@ -11,15 +11,15 @@ cModel Technology
 Z0 dC:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 1/simulation/modelsim
 vdecoder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1660705213
+Z2 !s110 1660783191
 !i10b 1
-!s100 NTZn9NV>L4zG^I@WNDIIV2
+!s100 0llckf74UC_LLd48?9^]c2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I:Zh8:SYWL?DA<UhQSi:;F3
+I1iP6lj1HBG6zjFjQJdCeC2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1660704277
+w1660707769
 8C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 1/decoder.sv
 FC:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 1/decoder.sv
 !i122 0
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1660705213.000000
+Z6 !s108 1660783191.000000
 !s107 C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 1/decoder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 1|C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 1/decoder.sv|
 !i113 1
@@ -39,13 +39,13 @@ vdecoder_tb
 R1
 R2
 !i10b 1
-!s100 XEOW4jBiRk_7mZ1k_E]IX2
+!s100 >:TaCR>WAbfoIT_Y35Q`30
 R3
-I6<Q;16:NJ?X<oAj25DPKN1
+I>Uj<KbKS7>_NCH<U?RbC:1
 R4
 S1
 R0
-w1660705189
+w1660783180
 8C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 1/decoder_tb.sv
 FC:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 1/decoder_tb.sv
 !i122 1
