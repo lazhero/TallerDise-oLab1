@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/simulation/modelsim
 vbit_to_display
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1660782884
+Z2 !s110 1660849114
 !i10b 1
 !s100 [nzgT<T^aPPhO4CB8_<PC1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1660782884.000000
+Z6 !s108 1660849114.000000
 !s107 C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/bit_to_display.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3|C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/bit_to_display.sv|
 !i113 1
@@ -37,24 +37,24 @@ Z8 !s92 -sv -work work {+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/
 Z9 tCvgOpt 0
 vcounter
 R1
-Z10 !s110 1660782883
+R2
 !i10b 1
-!s100 T<OU7GSMI4mO@O3LBNLP<2
+!s100 ETY5CIf>iIYLLi^c]K;9>0
 R3
-Iz>II<^YNPPVP<g5emin^_2
+IMC2aL<KYgiC_J2nMF@8;M3
 R4
 S1
 R0
-w1660778832
+w1660848740
 8C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter.sv
 FC:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter.sv
 !i122 0
-L0 1 39
+L0 1 44
 R5
 r1
 !s85 0
 31
-Z11 !s108 1660782883.000000
+R6
 !s107 C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3|C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter.sv|
 !i113 1
@@ -63,15 +63,15 @@ R8
 R9
 vcounter_display_six_bit
 R1
-R10
+R2
 !i10b 1
-!s100 Ll3jUSbQQQeehz:L>?f?o2
+!s100 NiXkcoCgmJDW@3R1^0;K:2
 R3
-I6lc7VWj971a<n>HDJ:i<A1
+ILD1X9l;T4cJWbza`7OoDV0
 R4
 S1
 R0
-w1660779110
+w1660848457
 8C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_display_six_bit.sv
 FC:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_display_six_bit.sv
 !i122 1
@@ -80,35 +80,35 @@ R5
 r1
 !s85 0
 31
-R11
+R6
 !s107 C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_display_six_bit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3|C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_display_six_bit.sv|
 !i113 1
 R7
 R8
 R9
-vcounter_two_bit_tb
+vcounter_tb
 R1
-R2
+!s110 1660849115
 !i10b 1
-!s100 P@<MzdK24hk1X>_<z1T^40
+!s100 efKdL?cHC3oWg>AY<]7n51
 R3
-I5WoE3_aagFh^OAl[e9zXl2
+I@ffh[cd21WJo6Un?`2PmZ0
 R4
 S1
 R0
-w1660782810
-8C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_two_bit_tb.sv
-FC:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_two_bit_tb.sv
+w1660848814
+8C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_tb.sv
+FC:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_tb.sv
 !i122 4
-L0 1 49
+L0 1 50
 R5
 r1
 !s85 0
 31
 R6
-!s107 C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_two_bit_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3|C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_two_bit_tb.sv|
+!s107 C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3|C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_tb.sv|
 !i113 1
 R7
 R8

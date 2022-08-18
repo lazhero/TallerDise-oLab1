@@ -64,12 +64,6 @@ clk => state[2].CLK
 clk => state[3].CLK
 clk => state[4].CLK
 clk => state[5].CLK
-a => state[5].ENA
-a => state[4].ENA
-a => state[3].ENA
-a => state[2].ENA
-a => state[1].ENA
-a => state[0].ENA
 initValue[0] => state[0].ADATA
 initValue[1] => state[1].ADATA
 initValue[2] => state[2].ADATA
@@ -85,7 +79,7 @@ count[5] <= state[5].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |counter_display_six_bit|bit_to_display:h5
-a => Decoder0.IN0
+a => decoder_entry[4].IN1
 display[0] <= decoder:d1.Q
 display[1] <= decoder:d1.Q
 display[2] <= decoder:d1.Q
@@ -111,7 +105,7 @@ Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |counter_display_six_bit|bit_to_display:h4
-a => Decoder0.IN0
+a => decoder_entry[4].IN1
 display[0] <= decoder:d1.Q
 display[1] <= decoder:d1.Q
 display[2] <= decoder:d1.Q
@@ -137,7 +131,7 @@ Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |counter_display_six_bit|bit_to_display:h3
-a => Decoder0.IN0
+a => decoder_entry[4].IN1
 display[0] <= decoder:d1.Q
 display[1] <= decoder:d1.Q
 display[2] <= decoder:d1.Q
@@ -163,7 +157,7 @@ Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |counter_display_six_bit|bit_to_display:h2
-a => Decoder0.IN0
+a => decoder_entry[4].IN1
 display[0] <= decoder:d1.Q
 display[1] <= decoder:d1.Q
 display[2] <= decoder:d1.Q
@@ -189,7 +183,7 @@ Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |counter_display_six_bit|bit_to_display:h1
-a => Decoder0.IN0
+a => decoder_entry[4].IN1
 display[0] <= decoder:d1.Q
 display[1] <= decoder:d1.Q
 display[2] <= decoder:d1.Q
@@ -215,7 +209,7 @@ Q[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |counter_display_six_bit|bit_to_display:h0
-a => Decoder0.IN0
+a => decoder_entry[4].IN1
 display[0] <= decoder:d1.Q
 display[1] <= decoder:d1.Q
 display[2] <= decoder:d1.Q

@@ -1,15 +1,20 @@
-module counter #(parameter N=6)(input rst,clk,a,input [N-1:0] initValue, output[N-1:0] count );
+module counter #(parameter N=6)(input rst,clk,input [N-1:0] initValue, output[N-1:0] count );
 		
-		logic [N-1:0] state,nextState;
+		logic [N-1:0] state;
 		
 		
 		//logica secuencia
 		
 		always_ff@(posedge clk or posedge rst)begin
-			if(rst)state<=initValue;
-			else state<=nextState;
+			if(rst)state=initValue;
+			else begin
+				if(state==0)state=~0;
+				else state=state-1;
+			end
 		
 		end
+		
+		/*
 		
 		//logica de siguiente estado
 		
@@ -28,11 +33,11 @@ module counter #(parameter N=6)(input rst,clk,a,input [N-1:0] initValue, output[
 		 
 		 
 		 //logica de salida
+		
+		
+		*/
+		
 		assign count=state;
-		
-	
-		
-		
 		
 		
 

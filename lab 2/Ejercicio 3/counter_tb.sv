@@ -3,7 +3,7 @@ module counter_tb();
 	logic clk,rst,a;
 	logic [5:0] count,initValue;
 	
-	counter mycounter(.rst(rst),.clk(clk),.a(a),.count(count),.initValue(initValue));
+	counter mycounter(.rst(rst),.clk(clk),.count(count),.initValue(initValue));
 	
 	always begin 
 		#10;
