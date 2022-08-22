@@ -9,20 +9,20 @@ B1 => sumador_5b:Sum.B[1]
 B2 => sumador_5b:Sum.B[2]
 B3 => sumador_5b:Sum.B[3]
 B4 => sumador_5b:Sum.B[4]
-Dis0_0 << decoderBCD4to7segments:deco1.g
-Dis0_1 << decoderBCD4to7segments:deco1.f
-Dis0_2 << decoderBCD4to7segments:deco1.e
-Dis0_3 << decoderBCD4to7segments:deco1.d
-Dis0_4 << decoderBCD4to7segments:deco1.c
-Dis0_5 << decoderBCD4to7segments:deco1.b
-Dis0_6 << decoderBCD4to7segments:deco1.a
-Dis1_0 << decoderBCD4to7segments:deco2.g
-Dis1_1 << decoderBCD4to7segments:deco2.f
-Dis1_2 << decoderBCD4to7segments:deco2.e
-Dis1_3 << decoderBCD4to7segments:deco2.d
-Dis1_4 << decoderBCD4to7segments:deco2.c
-Dis1_5 << decoderBCD4to7segments:deco2.b
-Dis1_6 << decoderBCD4to7segments:deco2.a
+Dis0_0 <= decoderBCD4to7segments:deco1.g
+Dis0_1 <= decoderBCD4to7segments:deco1.f
+Dis0_2 <= decoderBCD4to7segments:deco1.e
+Dis0_3 <= decoderBCD4to7segments:deco1.d
+Dis0_4 <= decoderBCD4to7segments:deco1.c
+Dis0_5 <= decoderBCD4to7segments:deco1.b
+Dis0_6 <= decoderBCD4to7segments:deco1.a
+Dis1_0 <= decoderBCD4to7segments:deco2.g
+Dis1_1 <= decoderBCD4to7segments:deco2.f
+Dis1_2 <= decoderBCD4to7segments:deco2.e
+Dis1_3 <= decoderBCD4to7segments:deco2.d
+Dis1_4 <= decoderBCD4to7segments:deco2.c
+Dis1_5 <= decoderBCD4to7segments:deco2.b
+Dis1_6 <= decoderBCD4to7segments:deco2.a
 
 
 |programa_ejercicio_2|sumador_5b:Sum

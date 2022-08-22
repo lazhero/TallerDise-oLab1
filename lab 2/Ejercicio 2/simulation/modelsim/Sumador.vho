@@ -15,9 +15,9 @@
 
 -- VENDOR "Altera"
 -- PROGRAM "Quartus Prime"
--- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+-- VERSION "Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition"
 
--- DATE "08/17/2022 19:17:03"
+-- DATE "08/18/2022 13:26:19"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -46,20 +46,20 @@ ENTITY 	programa_ejercicio_2 IS
 	B2 : IN std_logic;
 	B3 : IN std_logic;
 	B4 : IN std_logic;
-	Dis0_0 : BUFFER std_logic;
-	Dis0_1 : BUFFER std_logic;
-	Dis0_2 : BUFFER std_logic;
-	Dis0_3 : BUFFER std_logic;
-	Dis0_4 : BUFFER std_logic;
-	Dis0_5 : BUFFER std_logic;
-	Dis0_6 : BUFFER std_logic;
-	Dis1_0 : BUFFER std_logic;
-	Dis1_1 : BUFFER std_logic;
-	Dis1_2 : BUFFER std_logic;
-	Dis1_3 : BUFFER std_logic;
-	Dis1_4 : BUFFER std_logic;
-	Dis1_5 : BUFFER std_logic;
-	Dis1_6 : BUFFER std_logic
+	Dis0_0 : OUT std_logic;
+	Dis0_1 : OUT std_logic;
+	Dis0_2 : OUT std_logic;
+	Dis0_3 : OUT std_logic;
+	Dis0_4 : OUT std_logic;
+	Dis0_5 : OUT std_logic;
+	Dis0_6 : OUT std_logic;
+	Dis1_0 : OUT std_logic;
+	Dis1_1 : OUT std_logic;
+	Dis1_2 : OUT std_logic;
+	Dis1_3 : OUT std_logic;
+	Dis1_4 : OUT std_logic;
+	Dis1_5 : OUT std_logic;
+	Dis1_6 : OUT std_logic
 	);
 END programa_ejercicio_2;
 
@@ -153,12 +153,6 @@ SIGNAL \deco2|Equal2~0_combout\ : std_logic;
 SIGNAL \deco2|e~0_combout\ : std_logic;
 SIGNAL \deco2|b~0_combout\ : std_logic;
 SIGNAL \Sum|S4|Co~combout\ : std_logic;
-SIGNAL \ALT_INV_B0~input_o\ : std_logic;
-SIGNAL \ALT_INV_A0~input_o\ : std_logic;
-SIGNAL \ALT_INV_A4~input_o\ : std_logic;
-SIGNAL \ALT_INV_B4~input_o\ : std_logic;
-SIGNAL \Sum|S4|ALT_INV_xorAB~combout\ : std_logic;
-SIGNAL \Sum|S2|ALT_INV_Co~combout\ : std_logic;
 SIGNAL \Sum|S2|ALT_INV_S~combout\ : std_logic;
 SIGNAL \Sum|S1|ALT_INV_S~combout\ : std_logic;
 SIGNAL \deco1|ALT_INV_e~0_combout\ : std_logic;
@@ -174,6 +168,12 @@ SIGNAL \ALT_INV_A2~input_o\ : std_logic;
 SIGNAL \ALT_INV_B2~input_o\ : std_logic;
 SIGNAL \ALT_INV_A1~input_o\ : std_logic;
 SIGNAL \ALT_INV_B1~input_o\ : std_logic;
+SIGNAL \ALT_INV_A0~input_o\ : std_logic;
+SIGNAL \ALT_INV_B0~input_o\ : std_logic;
+SIGNAL \ALT_INV_A4~input_o\ : std_logic;
+SIGNAL \ALT_INV_B4~input_o\ : std_logic;
+SIGNAL \Sum|S2|ALT_INV_Co~combout\ : std_logic;
+SIGNAL \Sum|S4|ALT_INV_xorAB~combout\ : std_logic;
 
 BEGIN
 
@@ -204,12 +204,6 @@ Dis1_6 <= ww_Dis1_6;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-\ALT_INV_B0~input_o\ <= NOT \B0~input_o\;
-\ALT_INV_A0~input_o\ <= NOT \A0~input_o\;
-\ALT_INV_A4~input_o\ <= NOT \A4~input_o\;
-\ALT_INV_B4~input_o\ <= NOT \B4~input_o\;
-\Sum|S4|ALT_INV_xorAB~combout\ <= NOT \Sum|S4|xorAB~combout\;
-\Sum|S2|ALT_INV_Co~combout\ <= NOT \Sum|S2|Co~combout\;
 \Sum|S2|ALT_INV_S~combout\ <= NOT \Sum|S2|S~combout\;
 \Sum|S1|ALT_INV_S~combout\ <= NOT \Sum|S1|S~combout\;
 \deco1|ALT_INV_e~0_combout\ <= NOT \deco1|e~0_combout\;
@@ -225,6 +219,12 @@ ww_devpor <= devpor;
 \ALT_INV_B2~input_o\ <= NOT \B2~input_o\;
 \ALT_INV_A1~input_o\ <= NOT \A1~input_o\;
 \ALT_INV_B1~input_o\ <= NOT \B1~input_o\;
+\ALT_INV_A0~input_o\ <= NOT \A0~input_o\;
+\ALT_INV_B0~input_o\ <= NOT \B0~input_o\;
+\ALT_INV_A4~input_o\ <= NOT \A4~input_o\;
+\ALT_INV_B4~input_o\ <= NOT \B4~input_o\;
+\Sum|S2|ALT_INV_Co~combout\ <= NOT \Sum|S2|Co~combout\;
+\Sum|S4|ALT_INV_xorAB~combout\ <= NOT \Sum|S4|xorAB~combout\;
 
 -- Location: IOOBUF_X89_Y8_N39
 \Dis0_0~output\ : cyclonev_io_obuf

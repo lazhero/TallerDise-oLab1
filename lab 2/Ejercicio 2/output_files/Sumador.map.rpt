@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Sumador
-Wed Aug 17 19:16:07 2022
-Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Thu Aug 18 13:25:27 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -46,8 +46,8 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Aug 17 19:16:07 2022       ;
-; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Analysis & Synthesis Status     ; Successful - Thu Aug 18 13:25:27 2022       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; Sumador                                     ;
 ; Top-level Entity Name           ; programa_ejercicio_2                        ;
 ; Family                          ; Cyclone V                                   ;
@@ -159,8 +159,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -170,16 +170,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                         ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
-; sumador.vhd                      ; yes             ; User VHDL File  ; D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/sumador.vhd                ;         ;
-; sumador_5b.vhd                   ; yes             ; User VHDL File  ; D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/sumador_5b.vhd             ;         ;
-; decoderBCD4to7segments.vhd       ; yes             ; User VHDL File  ; D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/decoderBCD4to7segments.vhd ;         ;
-; programa_ejercicio_2.vhd         ; yes             ; User VHDL File  ; D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/programa_ejercicio_2.vhd   ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
+; sumador.vhd                      ; yes             ; User VHDL File  ; C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/sumador.vhd                ;         ;
+; sumador_5b.vhd                   ; yes             ; User VHDL File  ; C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/sumador_5b.vhd             ;         ;
+; decoderBCD4to7segments.vhd       ; yes             ; User VHDL File  ; C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/decoderBCD4to7segments.vhd ;         ;
+; programa_ejercicio_2.vhd         ; yes             ; User VHDL File  ; C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/programa_ejercicio_2.vhd   ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------+
@@ -306,33 +306,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Aug 17 19:16:01 2022
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu Aug 18 13:25:17 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Sumador -c Sumador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file sumador.vhd
-    Info (12022): Found design unit 1: sumador-compuerta File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/sumador.vhd Line: 12
-    Info (12023): Found entity 1: sumador File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/sumador.vhd Line: 3
+    Info (12022): Found design unit 1: sumador-compuerta File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/sumador.vhd Line: 12
+    Info (12023): Found entity 1: sumador File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/sumador.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file sumador_5b.vhd
-    Info (12022): Found design unit 1: sumador_5b-structural File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/sumador_5b.vhd Line: 12
-    Info (12023): Found entity 1: sumador_5b File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/sumador_5b.vhd Line: 3
+    Info (12022): Found design unit 1: sumador_5b-structural File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/sumador_5b.vhd Line: 12
+    Info (12023): Found entity 1: sumador_5b File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/sumador_5b.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file test_sumadores.vhd
-    Info (12022): Found design unit 1: test_sumadores-Testing File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/test_sumadores.vhd Line: 6
-    Info (12023): Found entity 1: test_sumadores File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/test_sumadores.vhd Line: 3
+    Info (12022): Found design unit 1: test_sumadores-Testing File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/test_sumadores.vhd Line: 6
+    Info (12023): Found entity 1: test_sumadores File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/test_sumadores.vhd Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file decoderbcd4to7segments.vhd
-    Info (12022): Found design unit 1: decoderBCD4to7segments-arch File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/decoderBCD4to7segments.vhd Line: 12
-    Info (12023): Found entity 1: decoderBCD4to7segments File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/decoderBCD4to7segments.vhd Line: 5
+    Info (12022): Found design unit 1: decoderBCD4to7segments-arch File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/decoderBCD4to7segments.vhd Line: 12
+    Info (12023): Found entity 1: decoderBCD4to7segments File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/decoderBCD4to7segments.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file programa_ejercicio_2.vhd
-    Info (12022): Found design unit 1: programa_ejercicio_2-execution File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 14
-    Info (12023): Found entity 1: programa_ejercicio_2 File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 3
+    Info (12022): Found design unit 1: programa_ejercicio_2-execution File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 14
+    Info (12023): Found entity 1: programa_ejercicio_2 File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 3
 Info (12127): Elaborating entity "programa_ejercicio_2" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at programa_ejercicio_2.vhd(24): used explicit default value for signal "Cin" because signal was never assigned a value File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 24
-Info (12128): Elaborating entity "sumador_5b" for hierarchy "sumador_5b:Sum" File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 55
-Info (12128): Elaborating entity "sumador" for hierarchy "sumador_5b:Sum|sumador:S0" File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/sumador_5b.vhd Line: 46
-Info (12128): Elaborating entity "decoderBCD4to7segments" for hierarchy "decoderBCD4to7segments:deco1" File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 64
+Warning (10540): VHDL Signal Declaration warning at programa_ejercicio_2.vhd(24): used explicit default value for signal "Cin" because signal was never assigned a value File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 24
+Info (12128): Elaborating entity "sumador_5b" for hierarchy "sumador_5b:Sum" File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 55
+Info (12128): Elaborating entity "sumador" for hierarchy "sumador_5b:Sum|sumador:S0" File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/sumador_5b.vhd Line: 46
+Info (12128): Elaborating entity "decoderBCD4to7segments" for hierarchy "decoderBCD4to7segments:deco1" File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 64
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Dis1_1" is stuck at GND File: D:/Git/TallerDise-oLab1/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 10
+    Warning (13410): Pin "Dis1_1" is stuck at GND File: C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 2/programa_ejercicio_2.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -341,9 +341,9 @@ Info (21057): Implemented 42 device resources after synthesis - the final resour
     Info (21059): Implemented 14 output pins
     Info (21061): Implemented 18 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4858 megabytes
-    Info: Processing ended: Wed Aug 17 19:16:07 2022
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 4846 megabytes
+    Info: Processing ended: Thu Aug 18 13:25:27 2022
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:24
 
 

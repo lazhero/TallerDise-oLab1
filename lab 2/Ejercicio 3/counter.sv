@@ -14,28 +14,7 @@ module counter #(parameter N=6)(input rst,clk,input [N-1:0] initValue, output[N-
 		
 		end
 		
-		/*
-		
-		//logica de siguiente estado
-		
-		always_comb @(a)begin
-			if(a)begin
-				case(state)
-				
-					1'b0:nextState=~0;
-					default:nextState=state-1;
-				
-				endcase
-			end
-			else nextState=state;
-		
-		end
-		 
-		 
-		 //logica de salida
-		
-		
-		*/
+	
 		
 		assign count=state;
 		

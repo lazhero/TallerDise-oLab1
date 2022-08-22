@@ -1,5 +1,4 @@
 # Reading pref.tcl
-# ERROR: No extended dataflow license exists
 # do Counter_Display_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -13,59 +12,59 @@
 # 
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/lab\ 2/lab\ 2/Ejercicio\ 3 {C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:58:34 on Aug 18,2022
+# Start time: 18:16:52 on Aug 21,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3" C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter.sv 
 # -- Compiling module counter
 # 
 # Top level modules:
 # 	counter
-# End time: 12:58:34 on Aug 18,2022, Elapsed time: 0:00:00
+# End time: 18:16:52 on Aug 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/lab\ 2/lab\ 2/Ejercicio\ 3 {C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_display_six_bit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:58:34 on Aug 18,2022
+# Start time: 18:16:52 on Aug 21,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3" C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_display_six_bit.sv 
 # -- Compiling module counter_display_six_bit
 # 
 # Top level modules:
 # 	counter_display_six_bit
-# End time: 12:58:34 on Aug 18,2022, Elapsed time: 0:00:00
+# End time: 18:16:52 on Aug 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/lab\ 2/lab\ 2/Ejercicio\ 3 {C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/bit_to_display.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:58:34 on Aug 18,2022
+# Start time: 18:16:52 on Aug 21,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3" C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/bit_to_display.sv 
 # -- Compiling module bit_to_display
 # 
 # Top level modules:
 # 	bit_to_display
-# End time: 12:58:34 on Aug 18,2022, Elapsed time: 0:00:00
+# End time: 18:16:53 on Aug 21,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/lab\ 2/lab\ 2/Ejercicio\ 3 {C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:58:34 on Aug 18,2022
+# Start time: 18:16:53 on Aug 21,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3" C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/decoder.sv 
 # -- Compiling module decoder
 # 
 # Top level modules:
 # 	decoder
-# End time: 12:58:34 on Aug 18,2022, Elapsed time: 0:00:00
+# End time: 18:16:53 on Aug 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/lab\ 2/lab\ 2/Ejercicio\ 3 {C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:58:34 on Aug 18,2022
+# Start time: 18:16:53 on Aug 21,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3" C:/TEC/Segundo Semestre 2022/taller/lab 2/lab 2/Ejercicio 3/counter_tb.sv 
 # -- Compiling module counter_tb
 # 
 # Top level modules:
 # 	counter_tb
-# End time: 12:58:35 on Aug 18,2022, Elapsed time: 0:00:01
+# End time: 18:16:53 on Aug 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  counter_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" counter_tb 
-# Start time: 12:58:35 on Aug 18,2022
+# Start time: 18:16:53 on Aug 21,2022
 # Loading sv_std.std
 # Loading work.counter_tb
 # Loading work.counter
@@ -78,5 +77,5 @@
 # run -all
 # Break key hit
 # Simulation stop requested.
-# End time: 12:59:24 on Aug 18,2022, Elapsed time: 0:00:49
+# End time: 18:17:14 on Aug 21,2022, Elapsed time: 0:00:21
 # Errors: 0, Warnings: 0

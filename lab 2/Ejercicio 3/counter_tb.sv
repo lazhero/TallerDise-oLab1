@@ -11,40 +11,32 @@ module counter_tb();
 	
 	end
 	initial begin
-		initValue=6'b101010;
-		clk=1'b0;
+		//setting initial value
+		initValue=6'b101011;
+		clk=1'b1;
 		rst=1'b1;
+		#10; //negedge
+		assert(count==initValue) else $error("Fallando reset inicial");
 		#10; //posedge
 		rst=1'b0;
-		a=1'b1;
-		
-		
-		#5;
-		a=0;
-		#5; //neg edge
-		a=1;
-		#10;//posedge
-		a=0;
-		#40;//multiple edges to see noo change in a=0
-		a=0;
-		#10;
-		a=1;
-		#10;
-		a=0;
-		
-		#3; //reset in no edge
-		initValue=6'b000111;
+		#10;//negedge
+		assert(count==initValue-1) else $error("Fallando disminución");
+		#20;//negedge
+		assert(count==initValue-2) else $error("Fallando disminución");
+		#7;// no in edge reset
+		initValue=6'b000110;
 		rst=1'b1;
-		#7;
+		#13;//negedge
+		assert(count==initValue) else $error("Fallando reset asincrono");
+		#10; //posedge
 		rst=1'b0;
-		a=0;
-		#10;
-		a=1;
-		#10;
-		a=0;
+		#10;//negedge
+		assert(count==initValue-1) else $error("Fallando disminución");
+		
+		
 		
 		
 	
-	end 
+	end
 
 endmodule
