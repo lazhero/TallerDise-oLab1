@@ -57,7 +57,7 @@ begin
 		);
 		test: process begin
 			
-			wait for 10 ns;
+			wait for 8 ns;
 			A0 <= '1';
 			A1 <= '1';
 			A2 <= '1';
@@ -70,175 +70,89 @@ begin
 			B3 <= '1';
 			B4 <= '1';
 			
-			wait for 10 ns;
-			A0 <= '1';
-			A1 <= '1';
-			A2 <= '1';
-			A3 <= '1';
+			wait for 2 ns;
 			
-			B0 <= '0';
-			B1 <= '1';
-			B2 <= '1';
-			B3 <= '1';
+			if CarryIn = '0' then
+				assert Sum_5b_S(0) = '0' and Sum_5b_S(1) = '1' and Sum_5b_S(2) = '1' and Sum_5b_S(3) = '1'and Sum_5b_S(4) = '1' and Sum_5b_Co = '1' report "<Error message 1>" severity warning;
+			end if;
 			
-			wait for 10 ns;
-			A0 <= '0';
-			A1 <= '1';
-			A2 <= '1';
-			A3 <= '1';
 			
-			B0 <= '1';
-			B1 <= '1';
-			B2 <= '1';
-			B3 <= '1';
-			
-			wait for 10 ns;
-			A0 <= '0';
-			A1 <= '1';
-			A2 <= '1';
-			A3 <= '1';
-			
-			B0 <= '0';
-			B1 <= '1';
-			B2 <= '1';
-			B3 <= '1';
-			--5bytes
-			wait for 10 ns;
-			A0 <= '1';
-			A1 <= '1';
-			A2 <= '0';
-			A3 <= '1';
-			
-			B0 <= '1';
-			B1 <= '0';
-			B2 <= '1';
-			B3 <= '1';
-			
-			wait for 10 ns;
-			A0 <= '1';
-			A1 <= '1';
-			A2 <= '1';
-			A3 <= '1';
-			
-			B0 <= '0';
-			B1 <= '1';
-			B2 <= '1';
-			B3 <= '0';
-			
-			wait for 10 ns;
-			A0 <= '0';
-			A1 <= '0';
-			A2 <= '0';
-			A3 <= '1';
-			
-			B0 <= '1';
-			B1 <= '0';
-			B2 <= '0';
-			B3 <= '1';
-			
-			wait for 10 ns;
-			A0 <= '0';
-			A1 <= '1';
-			A2 <= '0';
-			A3 <= '1';
-			
-			B0 <= '0';
-			B1 <= '1';
-			B2 <= '1';
-			B3 <= '0';
-			wait for 10 ns;
-			CarryIn <= '1';
-			wait for 10 ns;
+			wait for 8 ns;
 			A0 <= '1';
 			A1 <= '1';
 			A2 <= '1';
 			A3 <= '1';
 			A4 <= '1';
 			
-			B0 <= '1';
+			B0 <= '0';
 			B1 <= '1';
 			B2 <= '1';
 			B3 <= '1';
 			B4 <= '1';
 			
-			wait for 10 ns;
-			A0 <= '1';
+			wait for 2 ns;
+			
+			if CarryIn = '0' then
+				assert Sum_5b_S(0) = '1' and Sum_5b_S(1) = '0' and Sum_5b_S(2) = '1' and Sum_5b_S(3) = '1'and Sum_5b_S(4) = '1' and Sum_5b_Co = '1' report "<Error message 2>" severity warning;
+			end if;
+			
+			wait for 8 ns;
+			A0 <= '0';
 			A1 <= '1';
 			A2 <= '1';
 			A3 <= '1';
+			A4 <= '1';
 			
 			B0 <= '0';
 			B1 <= '1';
 			B2 <= '1';
 			B3 <= '1';
+			B4 <= '1';
 			
-			wait for 10 ns;
+			wait for 2 ns;
+			
+			if CarryIn = '0' then
+				assert Sum_5b_S(0) = '0' and Sum_5b_S(1) = '0' and Sum_5b_S(2) = '1' and Sum_5b_S(3) = '1'and Sum_5b_S(4) = '1' and Sum_5b_Co = '1' report "<Error message 3>" severity warning;
+			end if;
+			
+			wait for 8 ns;
 			A0 <= '0';
-			A1 <= '1';
-			A2 <= '1';
-			A3 <= '1';
-			
-			B0 <= '1';
-			B1 <= '1';
-			B2 <= '1';
-			B3 <= '1';
-			
-			wait for 10 ns;
-			A0 <= '0';
-			A1 <= '1';
-			A2 <= '1';
-			A3 <= '1';
-			
-			B0 <= '0';
-			B1 <= '1';
-			B2 <= '1';
-			B3 <= '1';
-			--5bytes
-			wait for 10 ns;
-			A0 <= '1';
 			A1 <= '1';
 			A2 <= '0';
-			A3 <= '1';
-			
-			B0 <= '1';
-			B1 <= '0';
-			B2 <= '1';
-			B3 <= '1';
-			
-			wait for 10 ns;
-			A0 <= '1';
-			A1 <= '1';
-			A2 <= '1';
-			A3 <= '1';
+			A3 <= '0';
+			A4 <= '0';
 			
 			B0 <= '0';
 			B1 <= '1';
-			B2 <= '1';
+			B2 <= '0';
 			B3 <= '0';
+			B4 <= '0';
 			
-			wait for 10 ns;
+			wait for 2 ns;
+			
+			if CarryIn = '0' then
+				assert Sum_5b_S(0) = '0' and Sum_5b_S(1) = '0' and Sum_5b_S(2) = '1' and Sum_5b_S(3) = '0'and Sum_5b_S(4) = '0' and Sum_5b_Co = '0' report "<Error message 4>" severity warning;
+			end if;
+			
+			wait for 8 ns;
 			A0 <= '0';
 			A1 <= '0';
 			A2 <= '0';
-			A3 <= '1';
+			A3 <= '0';
+			A4 <= '1';
 			
-			B0 <= '1';
+			B0 <= '0';
 			B1 <= '0';
 			B2 <= '0';
 			B3 <= '1';
+			B4 <= '0';
 			
-			wait for 10 ns;
-			A0 <= '0';
-			A1 <= '1';
-			A2 <= '0';
-			A3 <= '1';
+			wait for 2 ns;
 			
-			B0 <= '0';
-			B1 <= '1';
-			B2 <= '1';
-			B3 <= '0';
-			wait for 10 ns;
-			CarryIn <= '0';
+			if CarryIn = '0' then
+				assert Sum_5b_S(0) = '0' and Sum_5b_S(1) = '0' and Sum_5b_S(2) = '0' and Sum_5b_S(3) = '1'and Sum_5b_S(4) = '1' and Sum_5b_Co = '0' report "<Error message 5>" severity warning;
+			end if;
+			
 			
 		end process test;
 		
